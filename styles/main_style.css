@@ -1,0 +1,49 @@
+.grid-container {
+  display: grid;
+  width: 75vw;
+  height: auto;
+
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header header header"
+    "posts posts posts old-posts"
+    "posts posts posts about"
+    "footer footer footer footer";
+
+  margin: auto;
+  justify-content: center;
+  grid-gap: 5px;
+
+  border: 2px solid rgb(255, 217, 0);
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  border: 1px solid red;
+}
+
+#header {
+  grid-area: header;
+  font-size: 3em;
+  font-weight: 500;
+  font-style: italic;
+}
+
+#footer {
+  grid-area: footer;
+}
+
+#posts {
+    grid-area: posts;
+}
+
+#old-posts {
+    grid-area: old-posts;
+}
+
+#about {
+    grid-area: about;
+}
