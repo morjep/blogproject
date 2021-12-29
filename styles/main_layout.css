@@ -1,8 +1,12 @@
+/* Main page layout */
 @media (max-width: 600px) {
   .grid-container {
     display: grid;
     width: 95vw;
     height: auto;
+    margin: auto;
+    justify-content: center;
+    grid-gap: 15px;
 
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -10,14 +14,8 @@
       "header"
       "about"
       "posts"
-      "old-posts"
+      "archive"
       "footer";
-
-    margin: auto;
-    justify-content: center;
-    grid-gap: 5px;
-
-    border: 2px solid rgb(255, 217, 0);
   }
 }
 
@@ -26,20 +24,17 @@
     display: grid;
     width: 95vw;
     height: auto;
+    margin: auto;
+    justify-content: center;
+    grid-gap: 15px;
 
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     grid-template-areas:
       "header header header header"
       "posts posts posts about"
-      "posts posts posts old-posts"
+      "posts posts posts archive"
       "footer footer footer footer";
-
-    margin: auto;
-    justify-content: center;
-    grid-gap: 5px;
-
-    border: 2px solid rgb(255, 217, 0);
   }
 }
 
@@ -48,49 +43,42 @@
     display: grid;
     width: 95vw;
     height: auto;
+    margin: auto;
+    justify-content: center;
+    grid-gap: 15px;
 
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: auto;
     grid-template-areas:
       "header header header header header header"
       "posts posts posts posts posts about"
-      "posts posts posts posts posts old-posts"
+      "posts posts posts posts posts archive"
       "footer footer footer footer footer footer";
-
-    margin: auto;
-    justify-content: center;
-    grid-gap: 5px;
-
-    border: 2px solid rgb(255, 217, 0);
-  }
+ }
 }
 
-.box {
-  display: flex;
-  align-items: center;
-  justify-content: left;
-  border: 1px solid red;
-}
 
 #header {
   grid-area: header;
-  font-size: 3em;
-  font-weight: 500;
-  font-style: italic;
+  border-bottom: 1px solid black;
 }
 
 #footer {
   grid-area: footer;
+  padding-top: 25px;
+  border-top: 1px solid black;
 }
 
 #posts {
   grid-area: posts;
 }
 
-#old-posts {
-  grid-area: old-posts;
+#archive {
+  grid-area: archive;
 }
 
 #about {
   grid-area: about;
+  background-color: lightgray;
+  padding: 10px;
 }

@@ -6,22 +6,47 @@
     name="viewport"
   />
   <title>Mortens Blog</title>
-  <link rel="stylesheet" href="./styles/main_style.css" />
+  <link rel="stylesheet" href="./styles/main.css" />
 </head>
 <body>
   <div class="grid-container">
-    <div class="box" id="header"><h1>Soft-ware, hard-fails</h1></div>
-    <ul class="flex-container" id="posts">
-      <li class="flex-item">1</li>
-      <li class="flex-item">2</li>
-      <li class="flex-item">3</li>
-      <li class="flex-item">4</li>
-      <li class="flex-item">5</li>
-      <li class="flex-item">6</li>
-    </ul>
+    <div id="header">
+      <h1>Super catchy blog-title goes here</h1>
+    </div>
 
-    <div class="box" id="about">A blog about why software projects fails! </div>
-    <div class="box" id="old-posts"><h3>Older posts</h3></div>
-    <div class="box" id="footer">Copyright 2021</div>
+    <div class="flex-container" id="posts">
+      <div class="flex-item">
+        <h2 id="post_header"><a href="./posts/some_post.html"> Super duper blog posts! </a></h2>
+      </div>
+      <div class="flex-item">
+        <h2 id="post_header">Another super duper blog posts!</h2>
+      </div>
+
+      <div class="flex-item">
+        <h2 id="post_header">Yet another Super duper blog posts!</h2>
+      </div>
+
+      <div class="flex-item">
+        <h2 id="post_header">and here we go again....</h2>
+      </div>
+
+      <div class="flex-item">
+        <h2 id="post_header">and again....</h2>
+      </div>
+    </div>
+
+    <div id="about">
+      <p>A fantastic blog about something the author finds super interesting and
+      really, really, REALLY want to share with the world...</p>
+    </div>
+
+    <div id="archive">
+      <a id="archive_link" href="./archive/archive.html"> Hit the archives</a>
+    </div>
+
+    <div id="footer">
+      <p>Copyright 2021</p>
+      <p>Legalese goes here.. Laywers need to make a living as well</p>
+    </div>
   </div>
 </body>

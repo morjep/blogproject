@@ -1,0 +1,8 @@
+/* Import main layout for homepage */
+@import "./main_layout.css";
+
+/* Import typography (fonts etc.) */
+@import "./typography.css";
+
+/* Import cards, buttons, ... */
+@import "./cards.css";
