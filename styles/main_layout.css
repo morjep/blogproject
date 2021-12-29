@@ -60,13 +60,7 @@
 
 #header {
   grid-area: header;
-  border-bottom: 1px solid black;
-}
-
-#footer {
-  grid-area: footer;
-  padding-top: 25px;
-  border-top: 1px solid black;
+  border-bottom: var(--main_border_style);
 }
 
 #posts {
@@ -79,6 +73,12 @@
 
 #about {
   grid-area: about;
-  background-color: lightgray;
+  background-color: var(--main_bg_color);
   padding: 10px;
+}
+
+#footer {
+  grid-area: footer;
+  padding-top: 25px;
+  border-top: var(--main_border_style);
 }
