@@ -10,24 +10,41 @@
      */
   flex-flow: row wrap;
 
-  /* Then we define how is distributed the remaining space */
+  /* Then we define how to distribute the remaining space */
   justify-content: space-around;
 
-  padding: 0;
-  margin: 0;
-  list-style: none;
+  /* padding: 0; */
+  /* margin: 0; */
+  /* list-style: none; */
 }
 
 .flex-item {
-  background: lightgray;
+  margin: var(--std_margin);
+  border: var(--card_border_style);
+  box-shadow: var(--card_shadow);
+  width: 400px;
+  height: 300px;
+}
+
+.card-container {
+  display: inline-block;
+}
+
+.left {
+  background: var(--card_bg_color);
+  display: table-cell;
+  vertical-align: top;
+  width: 200px;
+  height: 280px;
   padding: 10px;
-  /* width: 200px; */
-  /* height: 150px; */
-  margin-top: 10px;
-  color: black;
-  font-weight: bold;
-  font-size: 1em;
-  text-align: center;
-  border: 1px solid rgba(55, 55, 55, 0.17);
-  border-radius: 25px;
+}
+.right {
+  background: url('../images/my_dog.jpg');
+  display: table-cell;
+  width: 200px;
+  height: 300px;
+  /* width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0; */
 }

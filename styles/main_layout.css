@@ -54,9 +54,8 @@
       "posts posts posts posts posts about"
       "posts posts posts posts posts archive"
       "footer footer footer footer footer footer";
- }
+  }
 }
-
 
 #header {
   grid-area: header;
@@ -73,8 +72,11 @@
 
 #about {
   grid-area: about;
-  background-color: var(--main_bg_color);
-  padding: 10px;
+  border: var(--about_border_style);
+  box-shadow: var(--about_shadow);
+  background-color: var(--about_bg_color);
+  padding: 15px;
+  margin: var(--std_margin);
 }
 
 #footer {

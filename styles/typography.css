@@ -2,4 +2,13 @@
     --main_bg_color: rgb(204, 22, 22);
     --main_border_style: 1px solid black;
 
+    --card_bg_color: rgb(240, 240, 240);
+    --card_border_style: 1px solid rgb(0 0 0 / 0.2);
+    --card_shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+    --about_bg_color: rgb(240, 240, 240);
+    --about_border_style: 1px solid rgb(0 0 0 / 0.2);
+    --about_shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+    --std_margin: 15px;
 }
