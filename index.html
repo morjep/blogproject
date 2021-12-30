@@ -14,21 +14,25 @@
       <h1>Super catchy blog-title goes here</h1>
     </header>
 
-    <div class="flex-container" id="posts">
+    <nav id="navbar">
+      <div class="navbar-item"><a class="navbar-style" href="./index.html">Home</a></div>
+      <div class="navbar-item"><a class="navbar-style" href="./underconstruction.html">About</a></div>
+      <div class="navbar-item"><a class="navbar-style" href="./underconstruction.html">Archives</a></div>
+    </nav>
+
+    <section class="flex-container" id="posts">
       <div class="flex-item">
         <div class="card-container">
           <div class="left">
             <p class="date">29-12-2021</p>
             <h2 id="post_header">
-              <a href="./posts/some_post.html">
                 Super duper blog post title #1!
-              </a>
             </h2>
-            <button class="button-styled" type="button">
-              Read this!
-            </button>
+            <button class="button-styled" onclick="location.href='./posts/some_post.html'" type="button"> Read this!</button>
           </div>
-          <div class="right"></div>
+          <div class="right">
+            <img src="images/flowers.jpg" alt="Flowers in garden">
+          </div>
         </div>
       </div>
 
@@ -42,7 +46,11 @@
               </a>
             </h2>
           </div>
-          <div class="right"></div>
+          <div class="right">
+            <div class="right">
+              <img src="images/water.jpg" alt="Water with bubbles">
+            </div>
+          </div>
         </div>
       </div>
 
@@ -97,20 +105,20 @@
           <div class="right"></div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div id="about">
+    <!-- <div id="about">
       <p>
         A fantastic blog about something the author finds super interesting and
         really, really, REALLY want to share with the world...
       </p>
-    </div>
+    </div> -->
 
-    <div id="archive">
+    <!-- <div id="archive">
       <a id="archive_link" href="./archive/archive.html">
         Let's hit the archives</a
       >
-    </div>
+    </div> -->
 
     <footer id="footer">
       <p>Copyright 2021</p>

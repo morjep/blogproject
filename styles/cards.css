@@ -11,7 +11,7 @@
   flex-flow: row wrap;
 
   /* Then we define how to distribute the remaining space */
-  justify-content: space-around;
+  justify-content: space-evenly;
 
   /* padding: 0; */
   /* margin: 0; */
@@ -26,34 +26,39 @@
   height: 300px;
 }
 
+.flex-item:hover {
+  box-shadow: var(--card_shadow_hover);
+  border: var(--card_border_style);
+}
+
+
 .card-container {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+
 }
 
 .left {
   background: var(--card_bg_color);
-  display: table-cell;
-  vertical-align: top;
-  width: 200px;
-  height: 280px;
-  padding: 10px;
+  width: 250px;
+  height: 300px;
+  padding-left: var(--std_padding);
 }
 
 .right {
-  background: url('../images/my_dog.jpg');
-  display: table-cell;
-  width: 200px;
+  background: var(--card_bg_color);
+  width: 150px;
   height: 300px;
-  /* width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0; */
 }
-
 
 .date{
   color: gray;
   text-align: left;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
