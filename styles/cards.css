@@ -27,7 +27,9 @@
 }
 
 .card-container {
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
 .left {
@@ -38,6 +40,7 @@
   height: 280px;
   padding: 10px;
 }
+
 .right {
   background: url('../images/my_dog.jpg');
   display: table-cell;
@@ -47,4 +50,10 @@
   position: absolute;
   top: 0;
   left: 0; */
+}
+
+
+.date{
+  color: gray;
+  text-align: left;
 }
