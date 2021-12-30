@@ -46,15 +46,31 @@
   padding-left: var(--std_padding);
 }
 
-.right {
-  background: var(--card_bg_color);
-  width: 150px;
-  height: 300px;
+.left-stack {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  border: var(--debug_border);
+  height: 100%;
+  width: 95%;
+}
+
+.card-button {
+  margin-bottom: 5%;
+  margin-top:auto;
+
 }
 
 .date{
   color: gray;
   text-align: left;
+}
+
+
+.right {
+  background: var(--card_bg_color);
+  width: 150px;
+  height: 300px;
 }
 
 img {
