@@ -61,12 +61,6 @@
 
 }
 
-.date{
-  color: gray;
-  text-align: left;
-}
-
-
 .right {
   background: var(--card_bg_color);
   width: 150px;

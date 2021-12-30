@@ -1,4 +1,42 @@
+.header {
+  grid-area: header;
+  text-align: center;
+  font-size: var(--header_font_size);
+}
 
+.navbar {
+  display: flex;
+  grid-area: navbar;
+  background-color: var(--navbar_bg_color);
+  padding: var(--std_padding);
+  margin: var(--std_margin);
+  border: var(--debug_border);
+}
+
+.navbar-item {
+  padding: var(--std_padding);
+  margin: var(--std_margin);
+}
+
+a.navbar-style {
+  color: var(--navbar_font_color);
+  text-decoration: none;
+  font-size: var(--navbar_font_size);
+}
+
+a.navbar-style:hover {
+  color: var(--navbar_font_color_hover);
+}
+
+.footer {
+  grid-area: footer;
+  padding: var(--std_padding);
+  margin: var(--std_margin);
+  background-color: var(--navbar_bg_color);
+  color: var(--footer_font_color);
+}
+
+/* TO-DO: card colors needs to be moved to typography.css */
 .card-button {
   border: 0;
   line-height: 2.5;
@@ -26,44 +64,4 @@
 .card-button:active {
   box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
     inset 2px 2px 3px rgba(0, 0, 0, 0.6);
-}
-
-.header {
-  grid-area: header;
-  text-align: center;
- }
-
- .navbar {
-  display: flex;
-  grid-area: navbar;
-  background-color: var(--navbar_bg_color);
-  padding: var(--std_padding);
-  margin: var(--std_margin);
-  border: var(--debug_border);
-
-}
-
-.navbar-item {
-  padding: var(--std_padding);
-  margin: var(--std_margin);
-}
-
-a.navbar-style {
-  color:var(--navbar_font_color);
-  text-decoration: none;
-}
-
-a.navbar-style:hover {
-  color: var(--navbar_font_color_hover);
-}
-
-
-
-.footer {
-  grid-area: footer;
-  padding: var(--std_padding);
-  margin: var(--std_margin);
-  background-color: var(--navbar_bg_color);
-  color:var(--footer_font_color);
-
 }
