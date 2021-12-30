@@ -1,7 +1,0 @@
-Add subscribe button
-Fix left side indentation
-Color styling
-prev next button placement
-change avatar
-add more pictures to cards
-DRY in media queries

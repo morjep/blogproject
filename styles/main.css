@@ -1,7 +1,6 @@
 /* Import typography (fonts etc.) - MUST COME FIRST, REPLACE FOR DIFFERENT STYLING */
 @import "./typography.css";
 
-
 /* Import social media styling */
 @import "./social.css";
 
@@ -10,7 +9,6 @@
 
 /* Import main layout for homepage */
 @import "./main_layout.css";
-
 
 /* Import widgets: buttons, navbar, footer, ... */
 @import "./widgets.css";

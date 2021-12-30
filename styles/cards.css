@@ -1,21 +1,7 @@
 .flex-container {
-  /* We first create a flex layout context */
   display: flex;
-
-  /* Then we define the flow direction
-       and if we allow the items to wrap
-     * Remember this is the same as:
-     * flex-direction: row;
-     * flex-wrap: wrap;
-     */
   flex-flow: row wrap;
-
-  /* Then we define how to distribute the remaining space */
   justify-content: space-evenly;
-
-  /* padding: 0; */
-  /* margin: 0; */
-  /* list-style: none; */
 }
 
 .flex-item {
@@ -31,12 +17,10 @@
   border: var(--card_border_style);
 }
 
-
 .card-container {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-
 }
 
 .left {
@@ -57,8 +41,7 @@
 
 .card-button {
   margin-bottom: 5%;
-  margin-top:auto;
-
+  margin-top: auto;
 }
 
 .right {

@@ -58,24 +58,6 @@
       "footer footer  footer";
   }
 }
-/*
-.post-container {
-  display: grid;
-  width: 95vw;
-  height: auto;
-  margin: auto;
-  justify-content: center;
-  grid-gap: 15px;
-
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas:
-    "header header"
-    "navbar navbar"
-    "post post"
-    "prev next"
-    "footer footer";
-} */
 
 .post {
   grid-area: post;
@@ -96,10 +78,6 @@
   margin-right: var(--std_margin);
   margin-left: auto;
   border: var(--debug_border);
-}
-
-.social {
-  grid-area: social;
 }
 
 .about {

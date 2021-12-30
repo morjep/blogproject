@@ -1,12 +1,11 @@
 :root {
   /* palette */
   --first-color: #f8f8ff;
-  --second-color: #7575FF;
+  --second-color: #7575ff;
   --third-color: #d7f3ef;
   --fourth-color: #e7ebeb;
 
-
-  --header_bg_color:var(--first-color);
+  --header_bg_color: var(--first-color);
   --footer_bg_color: var(--first-color);
   --body_bg_color: var(--first-color);
   --navbar_bg_color: var(--second-color);
