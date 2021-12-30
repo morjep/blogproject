@@ -1,7 +1,8 @@
-/* post layout - screen size agnostic*/
+/* post layout */
+@media (max-width: 600px) {
   .post-container {
     display: grid;
-    width: 95vw;
+    width: 100vw;
     height: auto;
     margin: auto;
     justify-content: center;
@@ -10,14 +11,72 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-      "header header"
       "navbar navbar"
+      "header header"
       "post post"
       "prev next"
+      "about about"
       "footer footer";
   }
+}
 
+@media (min-width: 601px) and (max-width: 1300px) {
+  .post-container {
+    display: grid;
+    width: 100vw;
+    height: auto;
+    margin: auto;
+    justify-content: center;
+    grid-gap: 15px;
 
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+      "navbar navbar navbar navbar"
+      "header header header header"
+      "post post post about"
+      "prev prev next next"
+      "footer footer footer footer";
+  }
+}
+
+@media (min-width: 1301px) {
+  .post-container {
+    display: grid;
+    width: 100vw;
+    height: auto;
+    margin: auto;
+    justify-content: center;
+    grid-gap: 15px;
+
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+      "navbar navbar navbar navbar navbar navbar"
+      "header header header header header header"
+      "post post post post post about"
+      "prev prev prev next next next"
+      "footer footer footer footer footer footer";
+  }
+}
+/*
+.post-container {
+  display: grid;
+  width: 95vw;
+  height: auto;
+  margin: auto;
+  justify-content: center;
+  grid-gap: 15px;
+
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header"
+    "navbar navbar"
+    "post post"
+    "prev next"
+    "footer footer";
+} */
 
 .post {
   grid-area: post;
@@ -27,15 +86,17 @@
 }
 
 .prev {
-  /* padding: var(--std_padding); */
   margin-left: var(--std_margin);
   border: var(--debug_border);
 }
 
 .next {
-  /* padding: var(--std_padding); */
   margin-right: var(--std_margin);
   margin-left: auto;
-
   border: var(--debug_border);
+}
+
+.about {
+  grid-area: about;
+  margin-left: var(--std_margin);
 }

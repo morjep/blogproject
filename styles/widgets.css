@@ -2,14 +2,16 @@
   grid-area: header;
   text-align: center;
   font-size: var(--header_font_size);
+  background-color: var(--header_bg_color);
 }
 
 .navbar {
   display: flex;
+  width: 100%;
   grid-area: navbar;
   background-color: var(--navbar_bg_color);
   padding: var(--std_padding);
-  margin: var(--std_margin);
+  /* margin: var(--std_margin); */
   border: var(--debug_border);
 }
 
@@ -18,10 +20,11 @@
   margin: var(--std_margin);
 }
 
+
 a.navbar-style {
   color: var(--navbar_font_color);
   text-decoration: none;
-  font-size: var(--navbar_font_size);
+  font-size: var(--navbar-fontsize);
 }
 
 a.navbar-style:hover {
@@ -31,8 +34,8 @@ a.navbar-style:hover {
 .footer {
   grid-area: footer;
   padding: var(--std_padding);
-  margin: var(--std_margin);
-  background-color: var(--navbar_bg_color);
+  /* margin: var(--std_margin); */
+  background-color: var(--footer_bg_color);
   color: var(--footer_font_color);
 }
 

@@ -2,28 +2,26 @@
 @media (max-width: 600px) {
   .grid-container {
     display: grid;
-    width: 95vw;
+    width: 100vw;
     height: auto;
     margin: auto;
     justify-content: center;
     grid-gap: 15px;
 
-    grid-template-columns: 1fr;
+    grid-template-columns: 2fr;
     grid-template-rows: auto;
     grid-template-areas:
-      "header"
-      "navbar"
-      "about"
-      "posts"
-      "archive"
-      "footer";
+      "navbar social"
+      "header header"
+      "posts posts"
+      "footer footer";
   }
 }
 
 @media (min-width: 601px) and (max-width: 1300px) {
   .grid-container {
     display: grid;
-    width: 95vw;
+    width: 100vw;
     height: auto;
     margin: auto;
     justify-content: center;
@@ -32,8 +30,8 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     grid-template-areas:
+      "navbar navbar navbar social"
       "header header header header"
-      "navbar navbar navbar navbar"
       "posts posts posts posts"
       "posts posts posts posts"
       "footer footer footer footer";
@@ -43,7 +41,7 @@
 @media (min-width: 1301px) {
   .grid-container {
     display: grid;
-    width: 95vw;
+    width: 100vw;
     height: auto;
     margin: auto;
     justify-content: center;
@@ -52,8 +50,8 @@
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: auto;
     grid-template-areas:
+      "navbar navbar navbar navbar navbar social"
       "header header header header header header"
-      "navbar navbar navbar navbar navbar navbar"
       "posts posts posts posts posts posts"
       "posts posts posts posts posts posts"
       "footer footer footer footer footer footer";
@@ -62,6 +60,10 @@
 
 .posts {
   grid-area: posts;
+}
+
+.social {
+  grid-area: social;
 }
 
 /* #archive {

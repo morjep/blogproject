@@ -1,24 +1,38 @@
 :root {
+  /* palette */
+  --first-color: #5dacbd;
+  --second-color: #24527a;
+  --third-color: #a7bcb9;
+  --fourth-color: #e0ebeb;
+
   --bg_color: rgb(245, 245, 245);
+
+
+  --header_bg_color:var(--first-color);
+  --footer_bg_color: var(--first-color);
+  --body_bg_color: var(--first-color);
+  --navbar_bg_color: var(--second-color);
+  --card_bg_color: var(--fourth-color);
+  --post_bg_color: var(--third-color);
+  --about_bg_color: var(--bg_color);
+
+  --navbar-fontsize: 1.5em;
 
   --main_bg_color: var(--bg_color);
   --main_border_style: 1px solid black;
 
-  --card_bg_color: var(--bg_color);
   --card_border_style: 1px solid rgb(0 0 0 / 0.1);
   --card_shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   --card_shadow_hover: 0 3px 10px rgb(0 0 0 / 0.5);
   --card_date_font_color: grey;
 
-  --about_bg_color: var(--bg_color);
   --about_border_style: 1px solid rgb(0 0 0 / 0.2);
   --about_shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 
-  --navbar_bg_color: var(--bg_color);
   --navbar_font_color: darkgrey;
   --navbar_font_color_hover: black;
 
-  --footer_font_color: darkgrey;
+  --footer_font_color: lightgrey;
 
   --std_margin: 15px;
   --std_padding: 10px;
@@ -28,6 +42,7 @@
 
 body {
   font-family: "Times New Roman", Times, serif;
+  background-color: var(--body_bg_color);
 }
 
 h1 {
@@ -64,4 +79,8 @@ p.post-text {
   font-style: normal;
   font-weight: 400;
   font-variant: normal;
+}
+
+.post {
+  background-color: var(--third-color);
 }

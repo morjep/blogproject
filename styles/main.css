@@ -2,6 +2,9 @@
 @import "./typography.css";
 
 
+/* Import social media styling */
+@import "./social.css";
+
 /* Import cards */
 @import "./cards.css";
 
