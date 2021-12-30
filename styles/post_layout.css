@@ -18,34 +18,6 @@
   }
 
 
-.header {
-  grid-area: header;
-  text-align: center;
- }
-
- .navbar {
-  display: flex;
-  grid-area: navbar;
-  background-color: var(--navbar_bg_color);
-  padding: var(--std_padding);
-  margin: var(--std_margin);
-  border: var(--debug_border);
-
-}
-
-.navbar-item {
-  padding: var(--std_padding);
-  margin: var(--std_margin);
-}
-
-a.navbar-style {
-  color:var(--navbar_font_color);
-  text-decoration: none;
-}
-
-a.navbar-style:hover {
-  color: var(--navbar_font_color_hover);
-}
 
 .post {
   grid-area: post;
@@ -66,14 +38,4 @@ a.navbar-style:hover {
   margin-left: auto;
 
   border: var(--debug_border);
-}
-
-
-.footer {
-  grid-area: footer;
-  padding: var(--std_padding);
-  margin: var(--std_margin);
-  background-color: var(--navbar_bg_color);
-  color:var(--footer_font_color);
-
 }
