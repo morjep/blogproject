@@ -14,9 +14,10 @@
   --navbar_bg_color: var(--second-color);
   --card_bg_color: var(--fourth-color);
   --post_bg_color: var(--third-color);
+  --social_bg_color: var(--first-color);
   --about_bg_color: var(--bg_color);
 
-  --navbar-fontsize: 1.5em;
+  --navbar-fontsize: 1.1em;
 
   --main_bg_color: var(--bg_color);
   --main_border_style: 1px solid black;
@@ -46,9 +47,11 @@ body {
 }
 
 h1 {
-  font-size: 4em;
+  font-size: 3em;
   font-style: italic;
   font-weight: bolder;
+  padding: var(--std_padding);
+  margin: var(--std_margin);
 }
 
 h2.card-header {

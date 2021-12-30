@@ -13,7 +13,7 @@
     grid-template-areas:
       "navbar navbar"
       "header header"
-      "post post"
+      "post social"
       "prev next"
       "about about"
       "footer footer";
@@ -35,6 +35,7 @@
       "navbar navbar navbar navbar"
       "header header header header"
       "post post post about"
+      "post post post social"
       "prev prev next next"
       "footer footer footer footer";
   }
@@ -55,6 +56,7 @@
       "navbar navbar navbar navbar navbar navbar"
       "header header header header header header"
       "post post post post post about"
+      "post post post post post social"
       "prev prev prev next next next"
       "footer footer footer footer footer footer";
   }
@@ -86,14 +88,21 @@
 }
 
 .prev {
+  grid-area: prev;
   margin-left: var(--std_margin);
   border: var(--debug_border);
 }
 
 .next {
+  grid-area: next;
   margin-right: var(--std_margin);
   margin-left: auto;
   border: var(--debug_border);
+}
+
+.social {
+  grid-area: social;
+
 }
 
 .about {
