@@ -1,4 +1,7 @@
 Add subscribe button
 Fix left side indentation
-fix social links right indent
 Color styling
+prev next button placement
+change avatar
+add more pictures to cards
+DRY in media queries

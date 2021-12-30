@@ -2,15 +2,16 @@
   grid-area: header;
   text-align: center;
   font-size: var(--header_font_size);
+  color: var(--header-font-color);
   background-color: var(--header_bg_color);
 }
 
 .navbar {
+  grid-area: navbar;
   display: flex;
   width: 100%;
-  grid-area: navbar;
   background-color: var(--navbar_bg_color);
-  padding: var(--std_padding);
+  /* padding: var(--std_padding); */
   /* margin: var(--std_margin); */
   border: var(--debug_border);
 }

@@ -79,6 +79,7 @@
 
 .post {
   grid-area: post;
+  background-color: var(--post_bg_color);
   padding: var(--std_padding);
   margin: var(--std_margin);
   border: var(--debug_border);
@@ -104,4 +105,5 @@
 .about {
   grid-area: about;
   margin-left: var(--std_margin);
+  background-color: var(--about_bg_color);
 }
