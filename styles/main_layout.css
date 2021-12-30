@@ -60,12 +60,12 @@
   }
 }
 
-#header {
+.header {
   grid-area: header;
   text-align: center;
 }
 
-#navbar {
+.navbar {
   display: flex;
   grid-area: navbar;
   background-color: var(--navbar_bg_color);
@@ -91,7 +91,7 @@ a.navbar-style:hover {
 
 
 
-#posts {
+.posts {
   grid-area: posts;
 }
 
@@ -108,7 +108,7 @@ a.navbar-style:hover {
   margin: var(--std_margin);
 } */
 
-#footer {
+.footer {
   grid-area: footer;
   padding: var(--std_padding);
   margin: var(--std_margin);

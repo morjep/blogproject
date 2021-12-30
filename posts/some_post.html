@@ -10,11 +10,23 @@
 </head>
 <body>
   <div class="post-container">
-    <div id="header">
+    <header class="header">
       <h1>Super catchy blog-title goes here</h1>
-    </div>
+    </header>
 
-    <div id="post">
+    <nav class="navbar">
+      <div class="navbar-item">
+        <a class="navbar-style" href="../index.html">Home</a>
+      </div>
+      <div class="navbar-item">
+        <a class="navbar-style" href="../underconstruction.html">About</a>
+      </div>
+      <div class="navbar-item">
+        <a class="navbar-style" href="../underconstruction.html">Archives</a>
+      </div>
+    </nav>
+
+    <div class="post">
       <h2 id="posttitle">
         Greatest post title of all times (until the next post) goes here!
       </h2>
@@ -24,11 +36,29 @@
       </p>
     </div>
 
-    <div id="back-to-blog">
-      <a href="../index.html">Back to blog</a>
+    <div class="prev">
+      <button
+      class="card-button"
+      onclick="location.href='./posts/some_post.html'"
+      type="button"
+    >
+      Prev post
+    </button>
     </div>
 
-    <div id="footer">
+
+    <div class="next">
+      <button
+      class="card-button"
+      onclick="location.href='./posts/some_post.html'"
+      type="button"
+    >
+      Next post
+    </button>
+    </div>
+
+
+    <div class="footer">
       <p>Copyright 2021</p>
       <p>Legalese goes here.. Laywers need to make a living as well</p>
     </div>

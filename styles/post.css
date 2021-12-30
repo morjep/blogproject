@@ -1,8 +1,8 @@
-/* Import main layout for homepage */
-@import "./post_layout.css";
-
-/* Import typography (fonts etc.) */
+/* Import typography (fonts etc.) - MUST COME FIRST, REPLACE FOR DIFFERENT STYLING */
 @import "./typography.css";
 
-/* Import cards, buttons, ... */
-@import "./cards.css";
+/* Import widgets: buttons, ... */
+@import "./widgets.css";
+
+/* Import main layout for homepage */
+@import "./post_layout.css";
