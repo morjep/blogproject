@@ -1,0 +1,4 @@
+Add subscribe button
+Fix left side indentation
+fix social links right indent
+Color styling

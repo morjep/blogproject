@@ -5,15 +5,14 @@
     width: 100vw;
     height: auto;
     margin: auto;
-    justify-content: center;
     grid-gap: 15px;
 
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.05fr 0.95fr;
     grid-template-rows: auto;
     grid-template-areas:
       "navbar navbar"
       "header header"
-      "post social"
+      "social post"
       "prev next"
       "about about"
       "footer footer";
@@ -29,15 +28,14 @@
     justify-content: center;
     grid-gap: 15px;
 
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 0.05fr 0.8fr 0.15fr;
     grid-template-rows: auto;
     grid-template-areas:
-      "navbar navbar navbar navbar"
-      "header header header header"
-      "post post post about"
-      "post post post social"
-      "prev prev next next"
-      "footer footer footer footer";
+      "navbar navbar navbar"
+      "header header header"
+      "social post about"
+      "prev prev next"
+      "footer footer footer";
   }
 }
 
@@ -50,15 +48,14 @@
     justify-content: center;
     grid-gap: 15px;
 
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: 0.025fr 0.85fr 0.125fr;
     grid-template-rows: auto;
     grid-template-areas:
-      "navbar navbar navbar navbar navbar navbar"
-      "header header header header header header"
-      "post post post post post about"
-      "post post post post post social"
-      "prev prev prev next next next"
-      "footer footer footer footer footer footer";
+      "navbar navbar navbar"
+      "header header header"
+      "social post about"
+      "prev prev  next"
+      "footer footer  footer";
   }
 }
 /*
@@ -102,7 +99,6 @@
 
 .social {
   grid-area: social;
-
 }
 
 .about {

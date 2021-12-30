@@ -35,8 +35,8 @@
 
   --footer_font_color: lightgrey;
 
-  --std_margin: 15px;
-  --std_padding: 10px;
+  --std_margin: 10px;
+  --std_padding: 5px;
 
   /* --debug_border: 1px solid black; */
 }
