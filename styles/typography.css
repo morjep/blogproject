@@ -77,3 +77,15 @@ p.post-text {
   font-weight: 400;
   font-variant: normal;
 }
+
+p.about-strong {
+  font-style: italic;
+  font-weight: bold;
+  font-variant: normal;
+}
+
+p.about-text {
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+}
