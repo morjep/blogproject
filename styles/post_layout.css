@@ -85,3 +85,7 @@
   margin-left: var(--std_margin);
   background-color: var(--about_bg_color);
 }
+
+.avatar-img {
+  width: 80%;
+}
