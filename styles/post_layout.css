@@ -86,6 +86,10 @@
   background-color: var(--about_bg_color);
 }
 
+.post-fig img {
+  width: 40%;
+}
+
 .avatar-img {
   width: 80%;
 }
